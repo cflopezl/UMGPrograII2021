@@ -28,6 +28,18 @@ public class Atleta {
         this.deporte = deporte;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public String getDeporte() {
+        return deporte;
+    }
+
     @Override
     public String toString() {
         return "Atleta{" +

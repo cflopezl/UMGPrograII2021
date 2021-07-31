@@ -7,6 +7,8 @@ public class Competencia {
     private String disciplina;
     private String lugar;
     private Date fecha_hora;
+    private Atleta[] atletas;
+    private int contadorAtletas;
 
     //Constructor
     public Competencia(String disciplina, String lugar,
@@ -14,6 +16,19 @@ public class Competencia {
         this.disciplina = disciplina;
         this.lugar = lugar;
         this.fecha_hora = fecha_hora;
+        atletas = new Atleta[50];
+        contadorAtletas = 0;
+    }
+
+    public void addAtleta(Atleta pAtleta){
+        if( pAtleta.getDeporte().equals(this.disciplina) ) {
+            this.atletas[contadorAtletas] = pAtleta;
+            contadorAtletas = contadorAtletas + 1;
+        }else
+            System.out.println("El atleta " +
+                    pAtleta.getNombre() + " no forma" +
+                    " parte de esta disciplina " +
+                    this.disciplina);
     }
 
     public String getDisciplina(){
