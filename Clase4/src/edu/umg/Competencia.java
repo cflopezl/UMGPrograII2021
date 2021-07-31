@@ -1,5 +1,6 @@
 package edu.umg;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Competencia {
@@ -9,6 +10,7 @@ public class Competencia {
     private Date fecha_hora;
     private Atleta[] atletas;
     private int contadorAtletas;
+    private ArrayList<Juez> jueces;
 
     //Constructor
     public Competencia(String disciplina, String lugar,
@@ -18,6 +20,7 @@ public class Competencia {
         this.fecha_hora = fecha_hora;
         atletas = new Atleta[50];
         contadorAtletas = 0;
+        jueces = new ArrayList();
     }
 
     public void addAtleta(Atleta pAtleta){
@@ -29,6 +32,10 @@ public class Competencia {
                     pAtleta.getNombre() + " no forma" +
                     " parte de esta disciplina " +
                     this.disciplina);
+    }
+
+    public void addJuez(Juez pJuez){
+        jueces.add(pJuez);
     }
 
     public String getDisciplina(){

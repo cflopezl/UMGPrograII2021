@@ -29,6 +29,8 @@ public class Main {
                 ,"5ta Ave. Tokyo"
                 , new Date());
 
+        //pedimos los datos del atleta
+        //agregar atletas
         marcha.addAtleta(atleta1);
         marcha.addAtleta(new Atleta(
                 "Michael Phelps", "EEUU",
@@ -37,6 +39,10 @@ public class Main {
                 "ABRAHAM Tadesse", "Suiza",
                 "Marcha 20 Km"));
 
+        //agregar jueces
+        marcha.addJuez(new Juez("Noé"));
+        marcha.addJuez(new Juez("Katherine"));
+        marcha.addJuez(new Juez("Merleen"));
 
 
         System.out.println("marcha = " + marcha);
