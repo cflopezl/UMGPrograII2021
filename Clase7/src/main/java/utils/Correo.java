@@ -10,6 +10,7 @@ import java.util.Properties;
 
 public class Correo {
     public static void sendFromGMail(String subject, String body) {
+
         String[] to = VariablesGlobales.RECIPIENT;
         Properties props = System.getProperties();
         String host = "smtp.gmail.com";
