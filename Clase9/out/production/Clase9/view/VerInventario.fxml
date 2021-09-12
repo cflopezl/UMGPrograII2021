@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VerInventarioController">
+   <children>
+      <TableView fx:id="tblVideojuegos" layoutX="89.0" layoutY="123.0" prefHeight="200.0" prefWidth="422.0">
+        <columns>
+          <TableColumn fx:id="tcId" prefWidth="119.0" text="Identificador" />
+          <TableColumn fx:id="tcNombre" prefWidth="302.0" text="Nombre" />
+        </columns>
+      </TableView>
+      <Label layoutX="136.0" layoutY="57.0" text="Listado de Videojuegos adquiridos">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
